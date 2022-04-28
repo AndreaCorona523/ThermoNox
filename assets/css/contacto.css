@@ -1,0 +1,190 @@
+/* Format colaboration container*/
+.colaborations_container {
+	height: 100%;
+	margin: 1%;
+    width: 60%;
+}
+
+/* Format of contact container */
+.contact_container {
+    background-color: var(light-background);
+    border: 5px inset var(--orange);
+    border-radius: 15px;
+    margin: auto;
+    padding: 2%;
+    width: 90%;
+}
+
+/* Text alignment of contact form*/
+.contact_container p {
+    text-align: center;
+}
+
+/* Contact form aligment and arrangement in columns*/
+.contact_form_container {
+    column-count: 2;
+    margin: 0 auto;
+    width: 90%;
+}
+
+/*Format of in-text links*/
+.contact_global_link, .privacy_policy_link {
+	color: var(--orange);
+	text-decoration: none;
+}
+
+.error{
+    color: var(--orange);
+}
+
+/*Margin between each form field*/
+form li + li {
+    margin-top: 1em;
+}
+
+/*Format of input and textarea fields of contact form*/
+input,textarea {
+	border: 1px solid var(--yellow);
+    font-family: inherit;
+	height: 32px;
+	min-height: 22px;
+	width: 220px;
+}
+
+/*Format text entries of fields of contact form*/
+input[type="text"],input[type="email"],textarea {
+	font-size: 16px;
+    margin: 0 auto;
+    padding: 4px 6px;
+}
+
+/*Size and alignment of checkbox*/
+input[type="checkbox"] {
+    height: 0;
+    margin: 0 auto;
+    min-height: 20px;
+    min-width: 20px;
+    width: auto;
+}
+
+/*Format of invalid input for field in contact form*/
+input:invalid, .invalid {
+    background: #f2dede;
+    border: 1px solid var(--orange);
+    padding: 4px 6px;
+}
+
+/*Label alignment for contact form*/
+label {
+    display: inline-block;
+    padding: 2% 0 0 2%; 
+    text-align: right;
+    width: 40%;
+}
+
+/*Sets margin and padding for message alert*/
+.mail_message{
+    margin: 5% 0 0 20%;
+    padding: 2%;
+}
+
+/*Sets color to green of message alert*/ 
+.mail_message-sent{
+    background-color: #f2fae3;
+    border: 2px solid #8cc14c;
+    color: #659f13;
+}
+
+/*Sets color to red of message alert*/ 
+.mail_message-error{
+    background-color: #f2fae3;
+    border: 2px solid var(--orange);
+    color: var(--orange);
+}
+
+/*Format por mail title*/ 
+.mail_title{
+    font-size: 32px;
+    letter-spacing: 0.05em;
+}
+
+/*Minimum height for message field*/
+#message {
+	min-height: 150px;
+}
+
+/*Align text of privacy policy to the left and sets width to 220px*/
+#privacy_policy_label {
+    text-align: left;
+    width: 220px;
+}
+
+/*Format for select field*/
+select {
+    border: 1px solid var(--yellow);
+    height: 32px;
+    min-height: 22px;
+	width: 220px;
+    font-family: inherit;
+    font-size: inherit;
+    padding-left: 2%;
+}
+
+/*Format of send button of contact form*/
+.send_button {
+	background-color: var(--orange);
+    border: none;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: inherit;
+    margin: 0 0 0 40%;
+    min-width: 20%;
+    padding: 5px 5px;
+    text-decoration: none;
+}
+
+/*Size adjustment of support info container */
+.support_info_container {
+	height: 100%;
+	margin: 1%;
+    width: 40%;
+}
+
+/*Alignment of text in textarea of contact form*/
+textarea {
+	overflow: auto;
+    vertical-align: top;
+}
+
+/*Format and size adjustment for mobile devices*/
+@media (max-width: 768px){
+    
+    /*Set width to maximum */
+    .colaborations_container, label,.support_info_container {
+        width: 100%;
+    }
+
+    /*Set number of columns to one of contact form container*/
+    .contact_form_container {
+        column-count: 1;
+    }
+
+    /*Align text to center*/
+    .contact_form_container, label {
+        text-align: center;
+    }
+
+    /*Add margin between labels and fields in contact form*/
+    label {
+        margin: 2% auto;
+    }
+
+    #privacy_policy_label {
+        text-align: center;
+    }
+
+    /*Adjust margin and padding of send button*/
+    .send_button,.mail_message {
+        margin: 5%;
+    }
+}

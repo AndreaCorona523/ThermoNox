@@ -1,0 +1,79 @@
+/* Sets margin and padding to 0 and sets box-sizing to border-box */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sets font, size and display properties to the body*/
+body {
+    background-color: white;
+    color: rgb(68, 68, 68);
+    font-family: 'Arial';
+    justify-content: space-between;
+    min-height: 100%;
+    overflow-x: hidden;
+    transition: transform 0.5s ease;
+}
+
+/*Format for titles for all pages*/
+.general_title {
+    color:  rgb(235, 91, 37);
+    font-size: 42px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Sets display and layout properties of the header container */
+.header_container {
+    background-color: rgb(235, 91, 37);
+    display: flex;
+    justify-content: center;
+    padding: 0 25px;
+    position: relative;
+}
+
+/* Sets the size of the header logo */
+.header__logo {
+    width: 100%;
+}
+
+/* Sets header logo size */
+.header__logo_container {
+    margin: 20px 20px 20px 30%;
+    max-width: 400px;
+    padding: 0;
+    width: 40%;
+    align-content: center;
+}
+
+
+/*General format for main container in all pages*/
+.main_info_container {
+    height: auto;
+    margin: 0 auto;
+    padding-top: 1%;
+    width: 90%; 
+}
+
+/*Sets format for paragrap*/
+p{
+    padding: 0 1%;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+/*Set format for subtitles*/
+.sub1, .sub2{
+    font-size: 22px;
+    padding: 0 1%;
+    margin: 1% 0; 
+    text-align: center;
+} 
+
+/*Adds font-weight bold to sub1*/
+.sub1{
+    font-weight: bold;
+}
+

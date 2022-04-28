@@ -1,0 +1,129 @@
+/*Format for containers in about thermonoxilo page*/
+.about_thermonoxilo_container{
+	align-items: stretch;
+	background-color: rgb(68 68 68 / 20%);
+	display: flex;
+	flex-direction: row;
+	margin: 1%;
+	padding: 1%;
+}
+
+/*Justify elements according to the end of the container in about thermonoxilo page*/
+.about_thermonoxilo_container--end{
+	justify-content: flex-end;
+}
+
+/*Format of info inside containers in about thermonoxilo page*/
+.about_thermonoxilo_info_container{
+    margin: auto 2%;
+    padding: 1%;
+	width: 60%;
+}
+
+/*Add right margin to containers aligned to the right in about thermonoxilo page*/
+.about_thermonoxilo_info_container--right{
+	margin-right: 10%;
+}
+
+/*Align elements to the right*/
+.float-right{
+	float: right;
+}
+
+/*Align elements to the left*/
+.float-left{
+	float: left;
+}
+
+/*Increase width to fix according device size*/
+.increase-width{
+	width: 90vw;
+}
+
+/*Add right margin to containers aligned to the right in about thermonoxilo page*/
+.margin-left{
+	margin-left: 10%;
+}
+
+/*Adjust margin and width of text in safety thermonoxilo page*/
+#safety_thermonoxilo_text{
+	margin: auto 2%;
+    padding: 1%;
+	width: 100%;
+}
+
+.align-center{
+	text-align: center;
+}
+
+/*Add space between elements on the technical data list in about thermonoxilo page*/
+.technical_data_list{
+	padding: 1% 3%;
+}
+
+/*Add padding to elements on the technical data list in about thermonoxilo page*/
+.technical_data_list li {
+	margin: 2%;
+	padding-left: 1%;
+    padding-right: 3%;
+}
+
+/*Wrench marker format for list*/
+.technical_data_list li::marker{
+    color: #000000;
+	content: "\f0ad";
+    font-family: "FontAwesome";
+}
+
+/*Adjust width of image container to 50%*/
+.thermonoxilo_img_container{
+	max-width: 400px;
+	width: 50%;
+}
+
+/*Set size of image to cover image container*/
+.thermonoxilo_image{
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+}
+
+/*Format and size adjustment for mobile devices*/
+@media(max-width: 768px){
+
+	/*Remove background color and align items to center of about thermonoxilo container*/
+	.about_thermonoxilo_container{
+		align-items: center;
+		background-color: white;
+	}
+
+	/*Set width to maximum */
+	.about_thermonoxilo_container, .about_thermonoxilo_info_container, .thermonoxilo_img_container{
+		width: 100%;
+	}
+
+	/*Set display direction to column*/
+	.about_thermonoxilo_container{
+		flex-direction: column;
+	}
+
+	/*Adjust margin of info in containers*/
+	.about_thermonoxilo_info_container-margin{
+		margin: auto;
+	}
+
+	/*Remove float*/
+	.float-remove{
+		float: none;
+	}
+	
+	/*Reverse order of column display*/
+	.order-column-reverse{
+		flex-direction: column-reverse;
+	}
+
+	/*Add padding to image container*/
+	.thermonoxilo_img_container{
+		padding: 5%;
+	}
+}

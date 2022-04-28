@@ -1,0 +1,300 @@
+/* Sets styles for a break line div and sets it to display none in mobile*/
+.break-line{
+    background-color: var(--orange);
+    display: none;
+    height: 2px;
+    margin: 1.5rem 0;
+    width: 100%;
+}
+
+/* Sets padding and font-size for the "calls" section container */
+.calls{
+    font-size: 1.125rem;
+    padding: 2rem;
+}
+
+/* Sets the styles for the "modal" component */
+.call, .modal{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: space-between;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Sets styles for the element "button" inside a "call" component */
+.call__button{
+    background-color: var(--orange);
+    border: 0;
+    color: white;
+    display: block;
+    font-size: inherit;
+    margin-bottom: 1rem;
+    padding: 0.3rem 0.8rem;
+    text-decoration: none;
+}
+
+/* Sets styles for the "button" element when it is pressed */
+.call__button:active{
+    transform: scale(0.95);
+}
+
+/* Sets styles for the element "title" of the "call" component*/
+.call__title, .modal__title{
+    color: var(--orange);
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+/* Sets width and margin of the "video" element of the "call" component*/
+.call__video{
+    margin: 1rem;
+    width: 100%;
+}
+
+/* Wraps the "call" components in a flex container to adjust layout */
+.calls__wrapper{
+    align-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 2rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.iframe-container{
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    aspect-ratio: 16/9;
+}
+
+.iframe-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*Fade animation for modal*/
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: 1s;
+    transition-timing-function: ease-out;
+}
+
+/* Sets styles for the "footer" section container */
+.footer{
+    align-items: center;
+    background-color: var(--brown);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 80px;
+    margin-top: 25px;
+}
+
+/* Sets styles for the footer links */
+.footer__item{
+    display: flex;
+    flex-direction: column;    
+    padding: 1.5rem;
+}
+
+.footer__sub__item{
+    color: white;
+    display: block;
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Sets background-color and display properties to the "hero" section container */
+.hero{
+    background-color: var(--yellow);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 5rem 1.5rem 0 1.5rem;
+}
+
+/* Sets styles for the "title" element in the "hero" container */
+.hero__title_container{
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Sets display properties to the main container inside the hero */
+.hero__main_container{
+    align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+
+/* Sets size for the hero image container */
+.hero__image_container{
+    display: flex;
+    justify-self: flex-end;
+    max-width: 100%;
+}
+
+.hero__image_container img{
+    width: 100%;
+}
+
+/* Sets font for the list of features */
+.hero__features_list{
+    font-family: 'Overlock';
+    font-size: 1.5rem;
+    font-weight: bold;
+    max-width: 700px;
+}
+
+.hero__features_list li{
+    padding: 0.3rem;
+    transform: rotate(-2deg);
+}
+
+/* Sets size and postion for the atex-konform svg */
+.hero__atex-konform{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    gap: 1.5rem;
+    padding: 2rem 0;
+}
+
+/*Sets color of atex logo to white*/
+.hero__atex-konform svg{
+    fill: white;
+}
+
+
+
+/*Defines gap between elements inside modal*/
+.modal{
+    gap: 0.3rem;
+}
+
+/* Sets styles for a container that adds a border to the "modal" component */
+.modal_border {
+    border: 5px solid var(--orange);
+    box-shadow: 5px 10px 8px rgb(68 68 68 / 50%);
+    padding: 0 1rem;
+}
+
+/*Format of close button modal*/
+.modal__close{
+    align-items: center;
+    background: none;
+    border: none;
+    color: var(--orange);
+    cursor: pointer;
+    display: flex;
+    font-size: inherit;
+    outline: none;
+    padding: 15px 0 10px 10px;
+}
+
+/*Format for modal containrer*/
+.modal__container{
+    align-items: center;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    --gap: 15px;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 9999;
+}
+
+/*Adds bottom margin after text*/
+.modal__extract{
+    margin-bottom: 10%;
+}
+
+/*Sets background color of modal to white*/
+.modal__inner{
+    background-color: white;
+}
+
+/*Removes top margin of title*/
+.modal__title{
+    margin-top: 0;
+    font-size: 24px;
+}
+
+/*Sets close button to top left corner of modal*/
+.modal__top {
+    background-color: white;
+    padding-left: 85%;
+    width: 100%;
+}
+
+/* Removes the max-width atribute from the "call" component for the "notice" component */
+.notice{
+    max-width: none;
+}
+
+/*Fade effect for modal*/
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* Styles for tablets and larger devices */
+@media (min-width: 768px){
+    /* Adds a max-width to the "calls" section and centers it with margin-auto */
+    .calls{
+        margin: 0 auto;
+        max-width: 930px;
+    } 
+}
+
+/* Styles for laptops and larger devices */
+@media (min-width: 1024px){
+    /* Increases the max-width of the calls section */
+    .calls{
+        max-width: 1130px;
+    }
+
+    /* Displays the break-line */
+    .break-line{
+        display: block;
+    }
+    
+    /* Changes the layout of the footer elements */
+    .footer{
+        flex-direction:row;
+    }
+
+    /* Changes the layout of the hero elements */
+    .hero__main_container{
+        align-items: stretch;
+        flex-direction: row;
+    }
+
+    /*Increases padding of close button*/
+    .modal__top {
+        padding-left: 90%;
+    }
+}

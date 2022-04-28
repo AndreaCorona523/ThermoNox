@@ -1,0 +1,95 @@
+@import './fonts.css';
+@import './icons.css';
+@import './root.css';
+@import './inicio.css';
+@import './font-awesome.min.css';
+@import './index.css';
+@import './thermonox.css';
+@import './thermonoxilo.css';
+@import './contacto.css';
+
+
+/*Size of general container for all pages*/
+.general_container {
+    width: 100%;
+    height: auto;
+}
+
+/*Format for titles for all pages*/
+.general_title {
+    color: var(--orange);
+    font-size: 42px;
+    font-weight: 400;
+    margin: 2% 2% 0 2%;
+    padding-top: 3%;
+    text-align: center;
+}
+
+/*Size and alignment of info container for all pages*/
+.general_info_container {
+    margin: 0 auto;
+    width: 90%;
+}
+
+/*Increase font-size to 20px*/
+.increase_font-size {
+    font-size: 20px;
+}
+
+/*General format for main container in all pages*/
+.main_info_container {
+    display: flex;
+    flex-direction:row;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 1%;
+    width: 90%; 
+}
+
+/*Format for subtitles and subtitle2*/
+.subtitle1, .subtitle2,.subtitle3 {
+	font-size: 24px;
+    padding: 0 1%;
+    margin: 1% 0; 
+} 
+
+/*Add font-weight bold to subtitle1 and subtitle2*/
+.subtitle1,.subtitle2 {
+    font-weight: bold;
+} 
+
+/*1st format of subtitle*/
+.subtitle1 {
+    text-align: center;
+} 
+
+/*3rd format of subtitle*/
+.subtitle3 {
+    margin: 1% 0; 	
+    font-weight: normal;
+}
+
+/*Format and size adjustment for mobile devices*/
+@media(max-width: 768px){
+    /*Adjust margin and reduce font-size of general title*/
+    .general_title {
+        font-size: 36px;
+        margin-top: 8%;   
+    }
+
+    /*Set display direction to column*/
+    .main_info_container {
+        flex-direction: column;
+    }
+
+    /*Add top margin to subtitle1*/
+    .subtitle1 {
+        margin-top: 5%;
+	}
+
+    /*Align to center*/
+    .subtitle2, .subtitle3 {
+		text-align: center;
+	}
+
+}

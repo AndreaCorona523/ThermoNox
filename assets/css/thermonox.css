@@ -1,0 +1,439 @@
+/*Add space between paragraphs and justify text*/
+p {
+    padding: 1%;
+    text-align: justify;
+}
+
+/*Format for slideshow container in about thermonox page*/
+.about_thermonox_slideshow_container {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+
+/*Adding padding for cards in safety page*/
+.add-padding {
+    padding: 10%;
+}
+
+/*Column and margin format for advantages list in functioning page*/
+.advantages_list {
+    column-count: 2;
+    margin: 1% auto;
+    width: 90%;
+}
+
+/*Alignment for elements in advantages list in functioning page*/
+.advantages_list li {
+    padding: 1% 3% 0 1%;
+}
+
+/*Check marker format for lists*/
+.advantages_list li::marker,.guarantees_safety_list li::marker,.services_list li::marker, .sectors_applications_list li::marker {
+    content: "\f00c";
+    font-family: "FontAwesome";
+    color: #8cc14c;
+}
+
+/*Title in advantages list in functioning page*/
+.advantages_list_title {
+	font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+    padding: 0;
+}
+
+/*Row format for items in containers*/
+.applications_container,.characteristics_functioning_slides_container,.guarantees_safety_container, .industries_applications_list, .safety_cards_container {
+    display: flex;
+    flex-direction: row;
+}
+
+/*Format for applications info container */
+.applications_info_container {
+    background-color: var(light-background);
+    border: 5px solid var(--orange);
+    border-top-right-radius: 400px 50px;
+    border-bottom-left-radius: 400px 50px;
+    box-shadow: 5px 10px 8px rgb(68 68 68 / 50%);
+    margin: 2%;
+    padding: 4%;
+    width: 50%;
+}
+
+/*Adding orange shadow to container*/
+.box-shadow-format {
+    border: 1px solid var(--orange);
+    box-shadow: 5px 10px 8px var(--orange);
+    text-align: center;
+}
+
+/*Format for buttons of characteristics in functioning page*/
+.characteristics_functioning_button {
+    background: none;
+    border: none;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    margin: 3% 0;
+}
+
+/* Adding for background color for selected button and hovering*/
+.characteristics_functioning_selected_td,.characteristics_functioning_td:hover{
+    background-color: rgb(235 91 37 / 60%);
+}
+
+/*Align elements and text to center of characteristics table in functioning page*/
+.characteristics_functioning_table {
+	justify-content: center;
+    text-align: center;
+}
+
+/*Adding border in-between elements in characteristics table in functioning page*/
+.characteristics_functioning_table td:nth-child(n+2) {
+    border-left: 2px solid var(--orange);
+    padding: 0 0.5% 0 0.5%;
+}
+
+/*Text format for characteristics table in functioning page*/
+.characteristics_functioning_table_text {
+    border-bottom: 2px solid var(--orange);
+	border-top: 2px solid var(--orange);
+	height: auto;
+	padding: 2%;
+    text-align: center;
+}
+
+
+
+/*Adding format for characteristics slides in mobile devices*/
+.characteristic_slide {
+    display: none;
+    padding: 5%;
+    text-align: center;
+    width: 90%;
+}
+
+/*Hidding slideshow of characteristics in desktop devices */
+.characteristics_functioning_slideshow_container {
+    display: none;
+}
+
+/*Dot of format in characteristics slideshow in mobile devices*/
+.dot {
+    background-color:  var(--grey);
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    height: 15px;
+    margin: 0 2px;
+    transition: background-color 0.6s ease;
+    width: 15px;
+}
+
+/*Dot container alignment format*/
+.dot-container {
+    padding: 20px;
+    text-align: center;
+}
+  
+/*Fade animation for slideshows*/
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: 1s;
+    transition-timing-function: ease-out;
+}
+
+/*Format for prev and next buttons in slideshow in functioning page*/
+.functioning_prev_button, .functioning_next_button {
+    border-radius: 0 3px 3px 0;
+    color: var(--orange);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin: auto 0;
+    padding: 16px;
+    user-select: none;
+    width: 5%;
+}
+ 
+/*Adding hover format for prev and next button in functioning slideshow*/
+.functioning_prev_button:hover, .functioning_next_button:hover {
+    background-color: rgb(245 154 120);
+    color: white;
+}
+
+/*Width of guarantees list in safety page*/
+.guarantees_safety_list {
+    width: 70%;
+}
+
+/*Adjusting alignment of guarantees list in safety page*/
+.guarantees_safety_list li {
+	margin: 1% 2.5%;
+	padding: 0 1%;
+}
+
+/*Font format for highlighted text*/
+.general_highlighted_text {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 2%;
+}
+
+/*Format for atex logo in safety page*/
+.hero__atex-konform {
+    margin: auto;
+    padding: 0;
+    width: 20%;
+}
+
+/*Color format for atex logo in safety page*/
+.hero__atex-konform svg {
+    fill: black;
+}
+
+/*Lower border division container of industries table in aplicactions page*/
+.industries_applications_division_container {
+	display: flex;
+	flex-direction: row;
+	height: 5px;
+}
+
+
+/*Alignment and size adjustment for columns of industries table in applications page*/
+.industries_applications_list li{
+	align-items: center;
+    text-align: center;
+    width: 33%;
+}
+
+/*Title format of columns of industries table in applications page*/
+.industries_applications_list_title {
+	border-top: 2px solid var(--orange);
+    font-size: 22px;
+	margin: 0 5%;
+	padding: 5% 2.5% 2% 2.5%;
+	text-align: center;
+}
+
+/*Text format of columns of industries table in applications page*/
+.industries_applications_list_text {
+	margin: 0 5%;
+    padding: 4% 2.5% 2% 2.5%;
+	text-align: center;
+}
+
+/*Lower border format of industries table in aplicactions page*/
+.industries_applications_division {
+    border-bottom: 2px solid var(--orange);
+    margin: 0 2.5%;
+    width: 33%;
+}
+
+/*Adjusting bottom margin of limitations list in applications page*/
+.limitations_applications_list {
+	margin-bottom: 2%;
+}
+
+/*Adding border in-between elements in limitations list in applications page*/
+.limitations_applications_list li:nth-child(n+2) {
+	border-top: 1px solid rgb(235 91 37 / 40%);
+    padding-top: 3%;
+}
+
+/*Adjusting margin and padding of limitations list in applications page*/
+.limitations_applications_list li {
+	margin: 4%;
+    padding: 0 1%;
+}
+
+/*Times marker format for list*/
+.limitations_applications_list li::marker {
+	color: var(--orange);
+    content: "\f00d";
+    font-family: "FontAwesome";
+}
+
+/*Container for principal image in about thermonox page*/ 
+.principal_img_container {
+    background-image: url("../images/acercaThermonox/acercaThermonox_imagenPrincipal.jpg");
+    background-position: 50% -57.7575px;
+    height: 480px;
+    width: 100%;
+}
+
+/*Adjusting alignment of sectors list in applications page*/
+.sectors_applications_list li {
+	margin: 1% 4%;
+	padding: 0 1%;
+}
+
+/*Format for cards of safety page */
+.safety_cards_info_container {
+    background-color: rgb(250 185 0 / 70%);
+    box-shadow: 5px 10px 8px var(--grey);
+    margin: 2%;
+    width: 33%;
+}
+
+/*Title format for cards of safety page*/
+.safety_cards_title {
+    background-color: rgb(235 91 37 / 85%);
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    height: 80px;
+    padding: 5%;
+    text-align: center;
+}
+
+/*Format for services list in about thermonox page*/
+.services_list {
+    font-weight: bold;
+    margin: 1% auto 3% auto;
+    width: 90%;
+}
+
+/*Alignment for element in services list in about thermonox page*/
+.services_list li {
+    margin: 2%;
+    padding-left: 1%;
+}
+
+/*Format for image in slideshow in about thermonox page*/
+.slideshow_image {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+/*Format for image container in slideshow in about thermonox page*/
+.slideshow_image_container {
+    display: none;
+    height: 100%;
+}
+
+/*Format for titles in slideshow in functioning page*/
+.slide_title {
+    color: var(--orange);
+    font-size: 22spx;
+    text-align: center;
+}
+
+/*Format for prev and next buttons in slideshow in about thermonox page*/
+.about_thermonox_prev_button, .about_thermonox_next_button {
+    border-radius: 0 3px 3px 0;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: -22px;
+    padding: 16px;
+    position: absolute;
+    top: 50%;
+    transition: 0.6s ease;
+    user-select: none;
+    width: auto;
+}
+
+/*Right alignment for next button in slideshow in about thermonox page*/
+.about_thermonox_next_button {
+    border-radius: 3px 0 0 3px;
+    right: 0;   
+}
+
+/*Adding for background color for hovering*/
+.about_thermonox_prev_button:hover, .about_thermonox_next_button:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/*Remove top margin of footer*/
+.top_margin_remove {
+    margin-top: 0;
+}
+
+/*Increase button width*/
+.wide_button {
+    width: 30%;
+}
+
+/*Background color for active and dot hovering in slideshow */    
+.active, .dot:hover {
+    background-color: var(--orange);
+}
+
+/*Fade effect for slideshow transition*/
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/*Format and size adjustment for mobile devices*/
+@media(max-width: 768px){
+    /*Increase space between paragraphs*/
+    p {
+        padding: 2%;
+    }
+
+    /*Set number of columns to one of advantages list in functioning page*/
+    .advantages_list {
+        column-count: 1;
+    }
+
+    /*Set display direction to column*/
+    .applications_container,.guarantees_safety_container, .industries_applications_list, .sectors_applications_list,.safety_cards_container {
+		flex-direction: column;
+	}
+
+    /*Adjust padding of applications info container*/
+    .applications_info_container {
+        padding: 10%;
+        margin: 5%
+    }
+
+    /*Set width to maximum */
+    .applications_info_container,.guarantees_safety_list,.hero__atex-konform,.industries_applications_list li,.safety_cards_info_container {
+        width: 100%;
+    }
+
+    /*Hidde elements */
+    .characteristics_functioning_container,.industries_applications_division_container {
+        display: none;
+    }
+
+    /*Show elements*/
+    .characteristics_functioning_slideshow_container {
+        display: block;
+    }
+
+    /*Align text to center*/
+    .general_highlighted_text {
+        text-align: center;
+    }
+
+    /*Add top margin to atex logo */
+    .hero__atex-konform {
+        margin-top: 20px;
+    }
+
+    /*Remove top border and adjust padding of title on list in applications page*/
+	.industries_applications_list_title {
+		border-top: none;
+		padding: 3% 2.5% 3% 2.5%;
+	}
+    
+    /*Add bottom border to element on list in applications page*/
+    .industries_applications_list li{
+        border-bottom: 2px solid var(--orange);
+    }
+    /*Adjust margin cards in safety page*/
+    .safety_cards_info_container {
+        margin: 5% 0;
+    }
+}
+
+
+
+
