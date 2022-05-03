@@ -19,20 +19,13 @@ p {
 /*Column and margin format for advantages list in functioning page*/
 .advantages_list {
     column-count: 2;
-    margin: 1% auto;
+    margin: auto;
     width: 90%;
 }
 
 /*Alignment for elements in advantages list in functioning page*/
 .advantages_list li {
     padding: 1% 3% 0 1%;
-}
-
-/*Check marker format for lists*/
-.advantages_list li::marker,.guarantees_safety_list li::marker,.services_list li::marker, .sectors_applications_list li::marker {
-    content: "\f00c";
-    font-family: "FontAwesome";
-    color: #8cc14c;
 }
 
 /*Title in advantages list in functioning page*/
@@ -68,13 +61,21 @@ p {
     text-align: center;
 }
 
-/*Format for buttons of characteristics in functioning page*/
-.characteristics_functioning_button {
+/*Format text of buttons of characteristics in functioning page*/
+.characteristics_functioning_button_text{
     background: none;
     border: none;
     font-family: 'Montserrat';
     font-size: 16px;
+    font-weight: 550;
     margin: 3% 0;
+    text-align: center;
+}
+
+/*Background format for characteristics container in functioning page*/
+.characteristics_functioning_container{
+    background-color: rgb(250 185 0 / 70%);
+    box-shadow: 5px 10px 8px var(--grey);
 }
 
 /* Adding for background color for selected button and hovering*/
@@ -249,21 +250,6 @@ p {
     padding: 0 1%;
 }
 
-/*Times marker format for list*/
-.limitations_applications_list li::marker {
-	color: var(--orange);
-    content: "\f00d";
-    font-family: "FontAwesome";
-}
-
-/*Container for principal image in about thermonox page*/ 
-.principal_img_container {
-    background-image: url("../images/acercaThermonox/acercaThermonox_imagenPrincipal.jpg");
-    background-position: 50% -57.7575px;
-    height: 480px;
-    width: 100%;
-}
-
 /*Adjusting alignment of sectors list in applications page*/
 .sectors_applications_list li {
 	margin: 1% 4%;
@@ -298,21 +284,24 @@ p {
 
 /*Alignment for element in services list in about thermonox page*/
 .services_list li {
-    margin: 2%;
-    padding-left: 1%;
+    margin: 2% 0;
 }
 
 /*Format for image in slideshow in about thermonox page*/
 .slideshow_image {
     display: block;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     width: 100%;
+    
 }
 
 /*Format for image container in slideshow in about thermonox page*/
 .slideshow_image_container {
+    aspect-ratio: 21/9;
     display: none;
     height: 100%;
+    position: relative;
 }
 
 /*Format for titles in slideshow in functioning page*/
@@ -347,11 +336,6 @@ p {
 /*Adding for background color for hovering*/
 .about_thermonox_prev_button:hover, .about_thermonox_next_button:hover {
     background-color: rgba(0,0,0,0.8);
-}
-
-/*Remove top margin of footer*/
-.top_margin_remove {
-    margin-top: 0;
 }
 
 /*Increase button width*/

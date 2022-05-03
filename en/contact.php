@@ -32,7 +32,7 @@
 	<header class="header_container">
 			<div class="language_container">
 			  <div class="contact">
-				<a href="#" class="contact__item">Call us at 462 103 0321</a>
+				<a href="tel:4621030321" class="contact__item">Call us at 462 103 0321</a>
 				<span class="contact__item" >|</span>
 				<a class="contact__item" href="./contact.php">Contact us</a>
 			  </div>
@@ -74,8 +74,11 @@
 			</div>
 		</header>
 		<div class="general_container">
+		        <div class="principal_img_container">
+			        <img src="../assets/images/contacto/contacto_imagenPrincipal.jpg" alt="Principal Image">
+			    </div>
 				<div class="general_title_container">
-					<h1 class="general_title">Contact & Network</h1>	
+					<h1 class="top_margin_remove general_title">Contact & Network</h1>	
 				</div>
 				<div class="main_info_container">
 					<div class="support_info_container">
@@ -168,13 +171,13 @@
 		<div class="footer">
 			<div  class="footer__item">
 				<a class="footer__sub__item" href="./privacy_policy.html">Privacy Policy</a>
-				<a class="footer__sub__item" href="./legal_notice.html">Legal Notice</a>
 				<a class="footer__sub__item" href="./frequently_asked_questions.html">Frequently Asked Questions</a>
 			</div>
 			<div  class="footer__item">
-				<p class="footer__sub__item" href="./contact.php">Contact </p> 
-				<p class="footer__sub__item"> Phone Number: 462 103 0321</p> 
-				<p class="footer__sub__item"> Email: jorge.iturralde@lamoderna.com.mx </p> 
+				<p class="footer__sub__item">Contact </p> 
+			    <ul>
+                  <li><i class="bi-telephone-fill"></i> <a class="footer__sub__item" href="tel:4621030321">462 103 0321</a></li>
+                </ul>
 			</div>
 			<a class="footer__sub__item" href="https://www.thermonox.de/" target="_blank">Visit us on Thermonox.de</a>
 		</div>
@@ -198,6 +201,7 @@
 				<a href="./about_thermonoxilo.html">THERMONOXILO</a>
 			  </li>
 			  <li class="offcanvas_nav__item offcanvas_nav__item--selected"><a href="./contact.php">CONTACT</a></li>
+			  <li class="offcanvas_nav__item"><a href="tel:4621030321">CALL US</a></li>
 			</ul>
 		</div>
 		<div class="cover" id="cover"></div>

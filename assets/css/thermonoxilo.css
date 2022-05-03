@@ -1,12 +1,24 @@
 /*Format for containers in about thermonoxilo page*/
 .about_thermonoxilo_container{
 	align-items: stretch;
-	background-color: rgb(68 68 68 / 20%);
 	display: flex;
 	flex-direction: row;
 	margin: 1%;
 	padding: 1%;
 }
+
+/*Background and font-color for about thermonoxilo containers*/
+.about_thermonoxilo-background-orange{
+    background-color: rgb(235 91 37/ 80%);
+    color: white;
+}
+
+/*Background and font-color for about thermonoxilo containers*/
+.about_thermonoxilo-background-gray{
+    background-color: rgb(68 68 68 / 30%);
+    color:black;
+}
+
 
 /*Justify elements according to the end of the container in about thermonoxilo page*/
 .about_thermonoxilo_container--end{
@@ -45,8 +57,9 @@
 	margin-left: 10%;
 }
 
-/*Adjust margin and width of text in safety thermonoxilo page*/
+/*Adjust margin and width of safety text in about thermonoxilo page*/
 #safety_thermonoxilo_text{
+    background-color: var(--yellow);
 	margin: auto 2%;
     padding: 1%;
 	width: 100%;
@@ -63,16 +76,8 @@
 
 /*Add padding to elements on the technical data list in about thermonoxilo page*/
 .technical_data_list li {
-	margin: 2%;
-	padding-left: 1%;
+	margin: 2% 0;
     padding-right: 3%;
-}
-
-/*Wrench marker format for list*/
-.technical_data_list li::marker{
-    color: #000000;
-	content: "\f0ad";
-    font-family: "FontAwesome";
 }
 
 /*Adjust width of image container to 50%*/
@@ -94,7 +99,6 @@
 	/*Remove background color and align items to center of about thermonoxilo container*/
 	.about_thermonoxilo_container{
 		align-items: center;
-		background-color: white;
 	}
 
 	/*Set width to maximum */
@@ -111,7 +115,12 @@
 	.about_thermonoxilo_info_container-margin{
 		margin: auto;
 	}
-
+	
+	/*Removes background for about thermonoxilo container*/
+    .about_thermonoxilo-background-gray{
+        background-color: inherit;
+    }
+    
 	/*Remove float*/
 	.float-remove{
 		float: none;
@@ -121,6 +130,11 @@
 	.order-column-reverse{
 		flex-direction: column-reverse;
 	}
+	
+	/*Removes background color of safe text in thermonoxilo page*/
+    #safety_thermonoxilo_text{
+        background-color: inherit;
+    }
 
 	/*Add padding to image container*/
 	.thermonoxilo_img_container{

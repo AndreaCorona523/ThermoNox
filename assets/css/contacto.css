@@ -150,11 +150,18 @@ select {
     width: 40%;
 }
 
+
 /*Alignment of text in textarea of contact form*/
 textarea {
 	overflow: auto;
     vertical-align: top;
 }
+
+/*Removes top padding*/
+.top_padding_remove{
+    padding-top: 0;
+}
+
 
 /*Format and size adjustment for mobile devices*/
 @media (max-width: 768px){

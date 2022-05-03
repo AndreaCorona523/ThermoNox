@@ -66,9 +66,9 @@
             $mail = new PHPMailer(true); //Creates a new PHPMailer instace
             $mail->isSMTP(); //Establises SMTP Protocol
             $mail->SMTPDebug = 0; // 0 = off (for production use) - 1 = client messages - 2 = client and server messages
-            $mail->Host = "smtp.gmail.com"; //Name of the SMTP Server used. 
+            $mail->Host = "smtp.office365.com";//Name of the SMTP Server used. 
             $mail->Port = 587; // TLS only
-            $mail->SMTPSecure = 'tls'; // Sets TLS security protocol
+            $mail->SMTPSecure = 'STARTTLS'; // Sets STARTTLS security protocol  
             $mail->SMTPAuth = true; //SetS SMTP authentication
             $mail->Username = $username; // Email account used to send emails
             $mail->Password = $password; // Password of email account used to send emails

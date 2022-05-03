@@ -65,3 +65,7 @@
 .bi-list-task::before { content: "\f477"; }
 .bi-list-ul::before { content: "\f478"; }
 .bi-list::before { content: "\f479"; }
+.bi-check-lg::before { content: "\f633"; color: #8cc14c; font-size:25px;}
+.bi-x::before { content: "\f62a"; color: var(--orange);font-size:25px;}
+.bi-wrench-adjustable-circle::before { content: "\f78f"; }
+.bi-telephone-fill::before { content: "\f5b4"; }

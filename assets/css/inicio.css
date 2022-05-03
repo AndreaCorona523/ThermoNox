@@ -20,6 +20,7 @@
     flex-direction: column;
     gap: 1.5rem;
     justify-content: space-between;
+    margin-top:5%;
     max-width: 500px;
     text-align: center;
 }
@@ -110,13 +111,12 @@
 .footer__item{
     display: flex;
     flex-direction: column;    
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
 .footer__sub__item{
     color: white;
-    display: block;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem;
     text-align: center;
     text-decoration: none;
 }
@@ -191,12 +191,13 @@
     gap: 0.3rem;
 }
 
-/* Sets styles for a container that adds a border to the "modal" component */
-.modal_border {
+/* Sets styles for a container that adds a border to the "modal" component and calls components*/
+.modal_border,.call_border {
     border: 5px solid var(--orange);
     box-shadow: 5px 10px 8px rgb(68 68 68 / 50%);
     padding: 0 1rem;
 }
+
 
 /*Format of close button modal*/
 .modal__close{
@@ -272,6 +273,10 @@
 
 /* Styles for laptops and larger devices */
 @media (min-width: 1024px){
+    /*Removes top margin from calls container*/
+    .call{
+        margin-top: 0;
+    }
     /* Increases the max-width of the calls section */
     .calls{
         max-width: 1130px;
