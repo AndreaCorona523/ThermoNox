@@ -25,5 +25,5 @@ function showSlides(n) {
 window.onload= function () {
   setInterval(function(){ 
       plusSlides(1);
-  }, 3000);
+  }, 5000);
 }
