@@ -162,11 +162,12 @@
     font-size: 1.5rem;
     font-weight: bold;
     max-width: 700px;
+    text-align: justify;
 }
 
 .hero__features_list li{
-    padding: 0.3rem;
-    transform: rotate(-2deg);
+    padding: 0.7rem;
+    transform: none;
 }
 
 /* Sets size and postion for the atex-konform svg */
@@ -291,6 +292,12 @@
     .footer{
         flex-direction:row;
     }
+    
+    .hero__features_list li{
+        padding: 0.3rem;
+        transform: rotate(-2deg);
+    }
+
 
     /* Changes the layout of the hero elements */
     .hero__main_container{
