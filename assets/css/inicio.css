@@ -20,7 +20,6 @@
     flex-direction: column;
     gap: 1.5rem;
     justify-content: space-between;
-    margin-top:5%;
     max-width: 500px;
     text-align: center;
 }
@@ -60,15 +59,15 @@
     align-items: stretch;
     display: flex;
     flex-wrap: wrap;
-    gap: 0 2rem;
+    gap: 2.5rem 2rem;
     justify-content: center;
-    margin-top: 1.5rem;
 }
 
 .video{
     display: flex;
     justify-content: center;
     padding: 2rem;
+    background-color: var(--orange);
 }
 
 .iframe-container{
@@ -255,6 +254,11 @@
 /* Removes the max-width atribute from the "call" component for the "notice" component */
 .notice{
     max-width: none;
+}
+
+/*Removes top margin of element*/
+.top_margin_remove {
+    margin-top: 0;
 }
 
 /*Fade effect for modal*/
