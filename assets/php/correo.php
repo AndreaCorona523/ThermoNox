@@ -4,9 +4,9 @@
     use PHPMailer\PHPMailer\Exception;
     
     //open libraries needed por PHPMailer
-    require $_SERVER['DOCUMENT_ROOT'] . '/assets/php/PHPMailer/Exception.php';
-    require $_SERVER['DOCUMENT_ROOT'] . '/assets/php/PHPMailer/PHPMailer.php';
-    require $_SERVER['DOCUMENT_ROOT'] . '/assets/php/PHPMailer/SMTP.php';
+    require __DIR__. '/PHPMailer/Exception.php';
+    require __DIR__. '/PHPMailer/PHPMailer.php';
+    require __DIR__. '/PHPMailer/SMTP.php';
     
     require __DIR__.'/vendor/autoload.php';
     
@@ -66,7 +66,7 @@
             $mail = new PHPMailer(true); //Creates a new PHPMailer instace
             $mail->isSMTP(); //Establises SMTP Protocol
             $mail->SMTPDebug = 0; // 0 = off (for production use) - 1 = client messages - 2 = client and server messages
-            $mail->Host = "smtp.office365.com";//Name of the SMTP Server used. 
+            $mail->Host = "smtp.gmail.com";//Name of the SMTP Server used. 
             $mail->Port = 587; // TLS only
             $mail->SMTPSecure = 'STARTTLS'; // Sets STARTTLS security protocol  
             $mail->SMTPAuth = true; //SetS SMTP authentication
